@@ -1,3 +1,4 @@
+export const runtime = "nodejs";
 import { v2 as cloudinary } from "cloudinary";
 import { createClient } from "@sanity/client";
 import { NextResponse } from "next/server";

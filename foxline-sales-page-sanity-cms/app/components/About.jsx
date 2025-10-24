@@ -1,8 +1,10 @@
+"use client";
+
 import React from "react";
 
 const About = () => {
   return (
-    <section id="about" className="py-16 bg-white dark:bg-slate-950">
+    <section id="about" className="py-16 bg-transparent">
       <div className="max-w-4xl mx-auto px-4">
         <div className="text-center mb-8">
           <div
@@ -15,34 +17,35 @@ const About = () => {
               viewBox="0 0 200 200"
               xmlns="http://www.w3.org/2000/svg"
             >
+              {/* ✅ Border items adapt to dark mode */}
               <circle
                 cx="100"
                 cy="100"
                 r="88"
-                fill="none"
-                className="stroke-[#2c5f5f] dark:stroke-[#6eddd6]"
+                className="stroke-[#2c5f5f] dark:stroke-gray-300"
                 strokeWidth="3"
+                fill="none"
               />
               <circle
                 cx="100"
                 cy="100"
                 r="82"
-                fill="none"
-                className="stroke-[#d4af37] dark:stroke-[#f5e1a3]"
+                className="stroke-[#d4af37] dark:stroke-amber-300"
                 strokeWidth="1.5"
+                fill="none"
               />
               <g transform="translate(100, 100)">
                 <path
                   d="M -15 -20 L -10 -35 L -8 -20 Z"
-                  className="fill-[#2c5f5f] dark:fill-[#6eddd6]"
+                  className="fill-[#2c5f5f] dark:fill-gray-300"
                 />
                 <path
                   d="M 15 -20 L 10 -35 L 8 -20 Z"
-                  className="fill-[#2c5f5f] dark:fill-[#6eddd6]"
+                  className="fill-[#2c5f5f] dark:fill-gray-300"
                 />
                 <path
                   d="M -18 -15 Q -20 0 -15 10 Q -10 15 0 18 Q 10 15 15 10 Q 20 0 18 -15 Q 15 -22 0 -25 Q -15 -22 -18 -15 Z"
-                  className="fill-[#2c5f5f] dark:fill-[#6eddd6]"
+                  className="fill-[#2c5f5f] dark:fill-gray-300"
                 />
               </g>
             </svg>
@@ -53,7 +56,8 @@ const About = () => {
           </h2>
         </div>
 
-        <div className="max-w-3xl mx-auto space-y-4 text-lg text-slate-600 dark:text-slate-300">
+        {/* ✅ Fully adapted dark-mode colors */}
+        <div className="max-w-3xl mx-auto space-y-4 text-lg text-slate-600 dark:text-gray-300">
           <p>
             I grew up in the car dealership world. My family was in the business
             for over 40 years.
