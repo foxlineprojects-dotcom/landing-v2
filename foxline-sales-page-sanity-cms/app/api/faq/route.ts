@@ -1,4 +1,4 @@
-export const revalidate = 0;
+export const revalidate = 60;
 export const dynamic = "force-dynamic";
 
 import { createClient } from "@sanity/client";
@@ -25,3 +25,4 @@ export async function GET() {
     return NextResponse.json([], { status: 500 });
   }
 }
+
