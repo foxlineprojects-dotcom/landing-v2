@@ -17,5 +17,6 @@ export function GET(req) {
   });
 }
 
-export const revalidate = 0;
+export const revalidate = 60;
 export const dynamic = "force-dynamic";
+
