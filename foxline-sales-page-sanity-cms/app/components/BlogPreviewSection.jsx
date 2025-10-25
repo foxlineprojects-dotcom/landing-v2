@@ -34,7 +34,7 @@ export default function BlogPreviewSection() {
         Latest Insights & Guides
       </h2>
 
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {posts.slice(0, 3).map((post) => (
           <Link
             key={post._id}
@@ -60,3 +60,4 @@ export default function BlogPreviewSection() {
     </section>
   );
 }
+
