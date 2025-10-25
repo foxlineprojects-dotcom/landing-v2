@@ -24,7 +24,7 @@ const BlogPreviewWrapper = dynamic(
 
 export default function FoxlineClientWrapper() {
   return (
-    <div className="pb-10">
+    <div className="pb-20">
       <header className="flex justify-between items-center p-6 max-w-5xl mx-auto">
         <Image src={Logo} alt="Foxline" className="w-[120px]" />
         <DarkModeToggle />
@@ -45,4 +45,5 @@ export default function FoxlineClientWrapper() {
     </div>
   );
 }
+
 
