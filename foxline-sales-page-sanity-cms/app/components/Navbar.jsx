@@ -87,9 +87,10 @@ const Navbar = () => {
           </nav>
         )}
       </header>
-      ;
+      
     </div>
   );
 };
 
 export default Navbar;
+
