@@ -190,7 +190,7 @@ export default function FoxlineClientWrapper() {
       {/* Footer */}
       <footer className="bg-slate-900 dark:bg-black text-slate-400 dark:text-slate-500 py-8">
         <div className="max-w-6xl mx-auto px-4 text-center">
-          <p className="mb-2">© 2025 Foxline. Built with transparency.</p>
+          <p className="mb-2 dark:text-white">© 2025 Foxline. Built with transparency.</p>
           <p className="text-sm">
             <a href="https://foxline.ai" className="hover:text-white">
               foxline.ai
@@ -499,3 +499,4 @@ export default function FoxlineClientWrapper() {
 //     </div>
 //   );
 // }
+
