@@ -29,7 +29,7 @@ export default function BlogPreviewSection() {
     return <p className="text-center mt-10">No posts found.</p>;
 
   return (
-    <section className="max-w-5xl mx-auto mt-24 px-4">
+    <section className="max-w-4xl mx-auto mt-24 px-4">
       <h2 className="text-3xl font-bold mb-10 text-center text-slate-900 dark:text-white">
         Latest Insights & Guides
       </h2>
@@ -60,4 +60,5 @@ export default function BlogPreviewSection() {
     </section>
   );
 }
+
 
