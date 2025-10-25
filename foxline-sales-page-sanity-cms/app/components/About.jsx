@@ -5,7 +5,7 @@ import React from "react";
 const About = () => {
   return (
     <section id="about" className="py-16 bg-transparent">
-      <div className="max-w-4xl mx-auto px-4">
+      <div className="max-w-4xl mx-auto  md:px-0 px-4">
         <div className="text-center mb-8">
           <div
             className="mx-auto mb-6 flex items-center justify-center"
@@ -57,7 +57,7 @@ const About = () => {
         </div>
 
         {/* ✅ Fully adapted dark-mode colors */}
-        <div className="max-w-3xl mx-auto space-y-4 text-lg text-slate-600 dark:text-gray-300">
+        <div className=" mx-auto space-y-4 text-lg text-slate-600 dark:text-gray-300">
           <p>
             I grew up in the car dealership world. My family was in the business
             for over 40 years.
@@ -122,3 +122,4 @@ const About = () => {
 };
 
 export default About;
+
