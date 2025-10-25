@@ -27,11 +27,11 @@ export default function FaqSection() {
   // Skeleton loader
   if (loading) {
     return (
-      <section className="w-full max-w-4xl mx-auto mt-24 px-4">
+      <section className="w-full  max-w-4xl mx-auto mb-24 mt-24 px-4">
         <h2 className="text-3xl font-bold text-center mb-10">
           Frequently Asked Questions
         </h2>
-        <div className="space-y-4 animate-pulse">
+        <div className="space-y-4 pb-20 animate-pulse">
           {[...Array(4)].map((_, i) => (
             <div
               key={i}
@@ -42,6 +42,7 @@ export default function FaqSection() {
             </div>
           ))}
         </div>
+        <div className="mt-24"></div>
       </section>
     );
   }
@@ -55,7 +56,7 @@ export default function FaqSection() {
 
   // ✅ Enhanced design with soft gradient & animation
   return (
-    <section className="w-full max-w-4xl mx-auto mt-24 px-4">
+    <section id="faq" className="w-full max-w-4xl mb-20 mx-auto mt-10 px-4">
       <h2 className="text-3xl font-bold text-center mb-10 bg-gradient-to-r from-rose-500 to-orange-400 text-transparent bg-clip-text">
         Frequently Asked Questions
       </h2>

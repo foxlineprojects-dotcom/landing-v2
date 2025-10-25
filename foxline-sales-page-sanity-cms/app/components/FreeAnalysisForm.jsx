@@ -97,7 +97,10 @@ export default function FreeAnalysisForm() {
   }
 
   return (
-    <section className="max-w-2xl mx-auto bg-white dark:bg-gray-900 rounded-2xl shadow-xl p-8 md:p-10 my-20">
+    <section
+      id="analysis"
+      className="max-w-4xl mx-auto bg-white dark:bg-gray-900 rounded-2xl shadow-xl p-8 md:p-10 my-20"
+    >
       <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 text-center">
         Get Your Free Analysis
       </h2>

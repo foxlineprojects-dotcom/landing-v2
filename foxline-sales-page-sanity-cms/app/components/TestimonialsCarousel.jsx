@@ -53,7 +53,7 @@ export default function TestimonialsCarousel() {
 
   // ✅ Enhanced design: 3 per row + pagination adjustment
   return (
-    <section className="mt-12 pb-14">
+    <section id="testimonial" className="mt-12 pb-14">
       <Swiper
         spaceBetween={24}
         slidesPerView={1}
