@@ -89,7 +89,7 @@ export default function FreeAnalysisForm() {
     return (
       <div className="min-h-[300px] flex flex-col gap-4 items-center justify-center">
         <CheckCircle className="w-12 h-12 text-emerald-600" />
-        <p className="text-lg font-semibold text-slate-900 dark:text-white">
+        <p className="text-lg font-semibold text-slate-900 :text-white">
           Thanks! We’ll reach out soon.
         </p>
       </div>
@@ -99,14 +99,14 @@ export default function FreeAnalysisForm() {
   return (
     <section
       id="analysis"
-      className="max-w-3xl mx-auto bg-white dark:bg-gray-900 rounded-2xl shadow-xl p-8 md:p-10 my-20"
+      className="max-w-3xl mx-auto bg-white :bg-gray-900 rounded-2xl shadow-xl p-8 md:p-10 my-20"
     >
-      <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-6 text-center">
+      <h2 className="text-2xl font-bold text-slate-900 :text-white mb-6 text-center">
         Get Your Free Analysis
       </h2>
       {/* <form onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <label className="block text-sm font-medium text-slate-700 dark:text-gray-300 mb-2">
+          <label className="block text-sm font-medium text-slate-700 :text-gray-300 mb-2">
             Upload Your Car Contract
           </label>
           <input
@@ -114,17 +114,17 @@ export default function FreeAnalysisForm() {
             required
             onChange={handleFileChange}
             accept=".pdf,.jpg,.jpeg,.png,.doc,.docx"
-            className="block w-full text-slate-600 dark:text-gray-200 border border-slate-300 dark:border-gray-700 rounded-lg p-2 bg-white dark:bg-gray-800"
+            className="block w-full text-slate-600 :text-gray-200 border border-slate-300 :border-gray-700 rounded-lg p-2 bg-white :bg-gray-800"
           />
           {fileName && (
-            <p className="text-sm text-slate-600 dark:text-gray-300 mt-1">
+            <p className="text-sm text-slate-600 :text-gray-300 mt-1">
               {fileName}
             </p>
           )}
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-slate-700 dark:text-gray-300 mb-2">
+          <label className="block text-sm font-medium text-slate-700 :text-gray-300 mb-2">
             First Name
           </label>
           <input
@@ -134,13 +134,13 @@ export default function FreeAnalysisForm() {
             onChange={(e) =>
               setFormData({ ...formData, firstName: e.target.value })
             }
-            className="w-full px-4 py-3 border border-slate-300 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800 text-slate-900 dark:text-gray-100"
+            className="w-full px-4 py-3 border border-slate-300 :border-gray-700 rounded-lg bg-white :bg-gray-800 text-slate-900 :text-gray-100"
             placeholder="Enter your first name"
           />
         </div>
 
         <div>
-          <label className="block text-sm font-medium text-slate-700 dark:text-gray-300 mb-2">
+          <label className="block text-sm font-medium text-slate-700 :text-gray-300 mb-2">
             Email Address
           </label>
           <input
@@ -150,7 +150,7 @@ export default function FreeAnalysisForm() {
             onChange={(e) =>
               setFormData({ ...formData, email: e.target.value })
             }
-            className="w-full px-4 py-3 border border-slate-300 dark:border-gray-700 rounded-lg bg-white dark:bg-gray-800 text-slate-900 dark:text-gray-100"
+            className="w-full px-4 py-3 border border-slate-300 :border-gray-700 rounded-lg bg-white :bg-gray-800 text-slate-900 :text-gray-100"
             placeholder="your@email.com"
           />
         </div>
@@ -165,7 +165,7 @@ export default function FreeAnalysisForm() {
           {loading ? "Uploading..." : "Analyze My Car Contract Free"}
         </button>
 
-        <p className="text-center text-xs text-slate-500 dark:text-gray-400">
+        <p className="text-center text-xs text-slate-500 :text-gray-400">
           🔒 Files encrypted & auto-deleted after 30 days.
         </p>
       </form> */}

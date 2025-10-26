@@ -73,7 +73,7 @@ export default function RootLayout({ children }) {
         />
       </head>
 
-      <body className="bg-white text-gray-800 dark:bg-darkbg dark:text-gray-200 transition-colors duration-300">
+      <body className="bg-white text-gray-800 :bg-darkbg :text-gray-200 transition-colors duration-300">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           {children}
         </ThemeProvider>

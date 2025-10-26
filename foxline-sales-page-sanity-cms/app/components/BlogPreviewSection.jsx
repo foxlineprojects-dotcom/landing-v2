@@ -27,7 +27,7 @@ export default function BlogPreviewSection() {
   if (loading)
     return (
       <section className="max-w-4xl pb-20 mx-auto mt-24 px-4">
-        <h2 className="text-3xl font-bold mb-10 text-center text-slate-900 dark:text-white">
+        <h2 className="text-3xl font-bold mb-10 text-center text-slate-900 :text-white">
           Latest Insights & Guides
         </h2>
 
@@ -38,8 +38,8 @@ export default function BlogPreviewSection() {
               key={i}
               className="animate-pulse flex flex-col gap-4 cursor-default"
             >
-              <div className="w-full h-48 bg-gray-200 dark:bg-gray-800 rounded-xl" />
-              <div className="h-5 w-3/4 bg-gray-200 dark:bg-gray-800 rounded-md" />
+              <div className="w-full h-48 bg-gray-200 :bg-gray-800 rounded-xl" />
+              <div className="h-5 w-3/4 bg-gray-200 :bg-gray-800 rounded-md" />
             </div>
           ))}
         </div>
@@ -50,7 +50,7 @@ export default function BlogPreviewSection() {
 
   return (
     <section className="max-w-4xl pb-20 mx-auto mt-24 px-4">
-      <h2 className="text-3xl font-bold mb-10 text-center text-slate-900 dark:text-white">
+      <h2 className="text-3xl font-bold mb-10 text-center text-slate-900 :text-white">
         Latest Insights & Guides
       </h2>
 

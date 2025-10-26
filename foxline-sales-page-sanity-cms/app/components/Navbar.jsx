@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <header className="bg-white  dark:bg-slate-900 shadow-sm transition-colors sticky top-0 z-50">
+      <header className="bg-white  :bg-slate-900 shadow-sm transition-colors sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           {/* Logo */}
           <a href="/">
@@ -60,25 +60,25 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-x-5">
             <a
               href="/#about"
-              className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors"
+              className="text-slate-600 :text-slate-300 hover:text-slate-900 :hover:text-white font-medium transition-colors"
             >
               About
             </a>
             <a
               href="/#testimonial"
-              className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors"
+              className="text-slate-600 :text-slate-300 hover:text-slate-900 :hover:text-white font-medium transition-colors"
             >
               Testimonials
             </a>
             <a
               href="/#faq"
-              className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors"
+              className="text-slate-600 :text-slate-300 hover:text-slate-900 :hover:text-white font-medium transition-colors"
             >
               Faq
             </a>
             <a
               href="/#analysis"
-              className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors"
+              className="text-slate-600 :text-slate-300 hover:text-slate-900 :hover:text-white font-medium transition-colors"
             >
               Contact
             </a>
@@ -87,7 +87,7 @@ const Navbar = () => {
 
           {/* Mobile Toggle Button */}
           <button
-            className="md:hidden text-slate-900 dark:text-white"
+            className="md:hidden text-slate-900 :text-white"
             onClick={() => setMenuOpen((prev) => !prev)}
           >
             {menuOpen ? <X size={26} /> : <Menu size={26} />}
@@ -96,8 +96,8 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <nav className="md:hidden bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-700 transition-all">
-            <div className="flex flex-col px-4 py-4 space-y-4 text-slate-700 dark:text-slate-300">
+          <nav className="md:hidden bg-white :bg-slate-900 border-t border-slate-200 :border-slate-700 transition-all">
+            <div className="flex flex-col px-4 py-4 space-y-4 text-slate-700 :text-slate-300">
               <a href="/#about" className="font-medium hover:text-blue-500">
                 About
               </a>

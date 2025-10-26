@@ -33,11 +33,11 @@ export default function TestimonialsCarousel() {
         {[...Array(3)].map((_, i) => (
           <div
             key={i}
-            className="bg-gray-200 dark:bg-gray-800 rounded-2xl p-6 shadow-md"
+            className="bg-gray-200 :bg-gray-800 rounded-2xl p-6 shadow-md"
           >
-            <div className="h-5 w-4/5 bg-gray-300 dark:bg-gray-700 rounded mb-3"></div>
-            <div className="h-5 w-2/3 bg-gray-300 dark:bg-gray-700 rounded mb-4"></div>
-            <div className="h-4 w-1/3 bg-gray-300 dark:bg-gray-700 rounded"></div>
+            <div className="h-5 w-4/5 bg-gray-300 :bg-gray-700 rounded mb-3"></div>
+            <div className="h-5 w-2/3 bg-gray-300 :bg-gray-700 rounded mb-4"></div>
+            <div className="h-4 w-1/3 bg-gray-300 :bg-gray-700 rounded"></div>
           </div>
         ))}
       </div>
@@ -46,7 +46,7 @@ export default function TestimonialsCarousel() {
 
   if (!testimonials.length)
     return (
-      <p className="text-center text-gray-500 dark:text-gray-400 mt-10">
+      <p className="text-center text-gray-500 :text-gray-400 mt-10">
         No testimonials found.
       </p>
     );
