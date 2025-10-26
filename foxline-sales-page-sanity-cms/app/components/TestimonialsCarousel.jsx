@@ -53,62 +53,73 @@ export default function TestimonialsCarousel() {
 
   // ✅ Enhanced design: 3 per row + pagination adjustment
   return (
-    <section id="testimonial" className="mt-12 pb-14">
-      <Swiper
-        spaceBetween={24}
-        slidesPerView={1}
-        breakpoints={{
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-        }}
-        pagination={{
-          clickable: true,
-          el: ".custom-swiper-pagination",
-        }}
-        autoplay={{ delay: 4000, disableOnInteraction: false }}
-        modules={[Pagination, Autoplay]}
-        className="w-full"
-      >
-        {testimonials.map((t, idx) => (
-          <SwiperSlide key={idx}>
-            <div className="bg-white/70 h-[230px] flex flex-col justify-between dark:bg-gray-800/80 border border-gray-200 dark:border-gray-700 rounded-2xl p-5 transition-transform duration-300">
-              <div>
-                <p className="italic text-gray-700 dark:text-gray-200 mb-2 leading-relaxed whitespace-pre-wrap break-words line-clamp-5">
-                  “{t.quote}”
-                </p>
-              </div>
+    <section
+      id="testimonial"
+      className="py-16 w-full"
+      style={{ backgroundColor: "#2c5f5f" }}
+    >
+      <div className=" mx-auto px-4">
+        <div className="mx-auto max-w-6xl">
+          <h2 className="text-3xl font-bold text-center mb-12 text-white">
+            Real Stories, Real Savings
+          </h2>
 
-              <div className="mt-4">
-                <p className="font-semibold text-lg text-gray-900 dark:text-gray-100">
-                  {t.name}
-                </p>
-                {t.company && (
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
-                    {t.company}
+          <Swiper
+            spaceBetween={24}
+            slidesPerView={1}
+            breakpoints={{
+              768: { slidesPerView: 2 },
+              1024: { slidesPerView: 3 },
+            }}
+            pagination={{
+              clickable: true,
+              el: ".custom-swiper-pagination",
+            }}
+            autoplay={{ delay: 4000, disableOnInteraction: false }}
+            modules={[Pagination, Autoplay]}
+            className="w-full"
+          >
+            {testimonials.map((t, idx) => (
+              <SwiperSlide key={idx}>
+                <div
+                  className="p-6 rounded-xl h-[230px] flex flex-col justify-between border border-transparent"
+                  style={{ backgroundColor: "#3d7070" }}
+                >
+                  <p className="mb-4 leading-relaxed text-[#e8f4f4] line-clamp-5 whitespace-pre-wrap break-words">
+                    <span className="text-white font-semibold">“</span>
+                    {t.quote}
+                    <span className="text-white font-semibold">”</span>
                   </p>
-                )}
-              </div>
-            </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
 
-      {/* 👇 Custom pagination container */}
-      <div className="custom-swiper-pagination flex justify-center mt-8 space-x-2"></div>
+                  <p className="font-semibold text-white text-lg">{t.name}</p>
+                  {t.company && (
+                    <p className="text-sm text-teal-100">{t.company}</p>
+                  )}
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
 
-      <style jsx global>{`
-        /* Move pagination lower and recolor active dot */
-        .custom-swiper-pagination .swiper-pagination-bullet {
-          background-color: rgba(156, 163, 175, 0.6); /* gray-400 */
-          opacity: 1;
-          transition: all 0.3s ease;
-        }
+          {/* ✅ Pagination container */}
+          <div className="custom-swiper-pagination flex justify-center mt-8 space-x-2"></div>
 
-        .custom-swiper-pagination .swiper-pagination-bullet-active {
-          background-color: #ea580c; /* Tailwind orange-600 (matches your accent) */
-          transform: scale(1.2);
-        }
-      `}</style>
+          {/* ✅ Updated pagination colors */}
+          <style jsx global>{`
+            .custom-swiper-pagination .swiper-pagination-bullet {
+              width: 10px;
+              height: 10px;
+              background-color: rgba(232, 244, 244, 0.5);
+              opacity: 1;
+              transition: all 0.3s ease;
+              border-radius: 50%;
+            }
+            .custom-swiper-pagination .swiper-pagination-bullet-active {
+              background-color: #ffffff;
+              transform: scale(1.15);
+            }
+          `}</style>
+        </div>
+      </div>
     </section>
   );
 }

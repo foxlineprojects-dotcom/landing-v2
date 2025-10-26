@@ -56,42 +56,49 @@ export default function FaqSection() {
 
   // ✅ Enhanced design with soft gradient & animation
   return (
-    <section id="faq" className="w-full max-w-4xl mb-20 mx-auto mt-10 px-4">
-      <h2 className="text-3xl font-bold text-center mb-10 bg-gradient-to-r from-rose-500 to-orange-400 text-transparent bg-clip-text">
-        Frequently Asked Questions
-      </h2>
-      <div className="space-y-4">
-        {faqs.map((faq, i) => (
-          <div
-            key={i}
-            className="border border-gray-200 dark:border-gray-700 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl"
-          >
-            <button
-              onClick={() => setOpenIndex(openIndex === i ? null : i)}
-              className="w-full flex justify-between items-center text-left px-6 py-5"
-            >
-              <span className="font-semibold text-lg text-gray-800 dark:text-gray-100">
-                {faq.question}
-              </span>
-              <ChevronDown
-                className={`transition-transform duration-300 ${
-                  openIndex === i
-                    ? "rotate-180 text-orange-500"
-                    : "text-gray-500"
-                }`}
-              />
-            </button>
+    <section id="faq" className="max-w-4xl mx-auto px-4 py-16">
+      <div
+        className="rounded-2xl p-8 md:p-12 shadow-sm"
+        style={{ backgroundColor: "#f5e6d3" }}
+      >
+        <h2 className="text-3xl font-bold text-center text-slate-900 mb-10">
+          Common Questions
+        </h2>
+
+        <div className="space-y-6">
+          {faqs.map((faq, i) => (
             <div
-              className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                openIndex === i ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
-              }`}
+              key={i}
+              className="border-b border-slate-300/50 last:border-none pb-4"
             >
-              <div className="px-6 pb-5 text-gray-700 dark:text-gray-300">
-                {faq.answer}
+              <button
+                className="w-full flex justify-between items-center text-left"
+                onClick={() => setOpenIndex(openIndex === i ? null : i)}
+              >
+                <span className="text-lg font-semibold text-slate-900">
+                  {faq.question}
+                </span>
+
+                <ChevronDown
+                  className={`w-5 h-5 text-slate-700 transition-transform duration-300 ${
+                    openIndex === i ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+
+              {/* Animated Answer */}
+              <div
+                className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                  openIndex === i
+                    ? "max-h-40 mt-3 opacity-100"
+                    : "max-h-0 opacity-0"
+                }`}
+              >
+                <p className="text-slate-600 leading-relaxed">{faq.answer}</p>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

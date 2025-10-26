@@ -9,7 +9,24 @@ const Hero = () => {
 
       <Navbar />
       {/* Hero Section */}
-      <section className="max-w-6xl mx-auto px-4 py-12 md:py-20">
+      <div className="max-w-4xl py-20 mx-auto text-center mb-12">
+        <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+          Tired of feeling{" "}
+          <span style={{ color: "#2c5f5f" }}>intimidated and confused</span>{" "}
+          when shopping for a car?
+        </h1>
+        <p className="text-xl md:text-2xl text-slate-600 mb-4">
+          Know what you can save and what's fair—before you sign anything.
+        </p>
+        <p className="text-lg text-slate-500">
+          Upload your car contract or estimate. Get a plain-English breakdown in
+          24 hours.{" "}
+          <span className="font-semibold">
+            No pressure. No upsells. Just clarity.
+          </span>
+        </p>
+      </div>
+      {/* <section className="max-w-6xl mx-auto px-4 py-12 md:py-20">
         <div className="max-w-4xl mx-auto text-center mb-12 transition-colors">
           <h1 className="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white mb-6 leading-tight">
             Tired of the maze of{" "}
@@ -34,7 +51,7 @@ const Hero = () => {
             </span>
           </p>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };

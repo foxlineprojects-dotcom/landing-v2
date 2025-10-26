@@ -7,15 +7,50 @@ const Navbar = () => {
 
   return (
     <div>
-      <header className="bg-white dark:bg-slate-900 shadow-sm transition-colors sticky top-0 z-50">
+      <header className="bg-white  dark:bg-slate-900 shadow-sm transition-colors sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           {/* Logo */}
           <a href="/">
-            <div className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">F</span>
-              </div>
-              <span className="text-xl font-bold text-slate-900 dark:text-white">
+            <div className="flex items-center gap-3">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 200 200"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="100"
+                  cy="100"
+                  r="88"
+                  fill="none"
+                  stroke="#2c5f5f"
+                  strokeWidth="3"
+                />
+                <circle
+                  cx="100"
+                  cy="100"
+                  r="82"
+                  fill="none"
+                  stroke="#d4af37"
+                  strokeWidth="1.5"
+                />
+                <g transform="translate(100, 100)">
+                  <path d="M -15 -20 L -10 -35 L -8 -20 Z" fill="#2c5f5f" />
+                  <path d="M 15 -20 L 10 -35 L 8 -20 Z" fill="#2c5f5f" />
+                  <path
+                    d="M -18 -15 Q -20 0 -15 10 Q -10 15 0 18 Q 10 15 15 10 Q 20 0 18 -15 Q 15 -22 0 -25 Q -15 -22 -18 -15 Z"
+                    fill="#2c5f5f"
+                  />
+                </g>
+              </svg>
+              <span
+                className="text-2xl font-medium"
+                style={{
+                  color: "#2c5f5f",
+                  fontFamily: "system-ui, -apple-system, sans-serif",
+                  letterSpacing: "-0.02em",
+                }}
+              >
                 Foxline
               </span>
             </div>
@@ -25,21 +60,18 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-x-5">
             <a
               href="/#about"
-               onClick={() => setMenuOpen((prev) => !prev)}
               className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors"
             >
               About
             </a>
             <a
               href="/#testimonial"
-               onClick={() => setMenuOpen((prev) => !prev)}
               className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors"
             >
               Testimonials
             </a>
             <a
               href="/#faq"
-               onClick={() => setMenuOpen((prev) => !prev)}
               className="text-slate-600 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white font-medium transition-colors"
             >
               Faq
@@ -50,7 +82,7 @@ const Navbar = () => {
             >
               Contact
             </a>
-            <DarkModeToggle />
+            {/* <DarkModeToggle /> */}
           </div>
 
           {/* Mobile Toggle Button */}
@@ -66,42 +98,30 @@ const Navbar = () => {
         {menuOpen && (
           <nav className="md:hidden bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-700 transition-all">
             <div className="flex flex-col px-4 py-4 space-y-4 text-slate-700 dark:text-slate-300">
-              <a
-                 onClick={() => setMenuOpen((prev) => !prev)}
-                href="/#about" className="font-medium hover:text-blue-500">
+              <a href="/#about" className="font-medium hover:text-blue-500">
                 About
               </a>
               <a
                 href="/#testimonial"
-                onClick={() => setMenuOpen((prev) => !prev)}
                 className="font-medium hover:text-blue-500"
               >
                 Testimonials
               </a>
-              <a
-                 onClick={() => setMenuOpen((prev) => !prev)}
-                href="/#faq" className="font-medium hover:text-blue-500">
+              <a href="/#faq" className="font-medium hover:text-blue-500">
                 Faq
               </a>
-              <a 
-                 onClick={() => setMenuOpen((prev) => !prev)}
-                href="/#analysis" className="font-medium hover:text-blue-500">
+              <a href="/#analysis" className="font-medium hover:text-blue-500">
                 Contact
               </a>
 
               {/* Dark Mode toggle also visible on mobile */}
-              <div>
-                <DarkModeToggle />
-              </div>
+              <div>{/* <DarkModeToggle /> */}</div>
             </div>
           </nav>
         )}
       </header>
-      
     </div>
   );
 };
 
 export default Navbar;
-
-
