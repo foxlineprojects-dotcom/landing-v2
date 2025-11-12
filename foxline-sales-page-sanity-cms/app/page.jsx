@@ -252,7 +252,7 @@ export default function FoxlineClientWrapper() {
         </div>
       </section>
 
-      <BlogPreviewWrapper />
+      {/* <BlogPreviewWrapper /> */}
 
       {/* Final CTA */}
 
@@ -354,3 +354,4 @@ export default function FoxlineClientWrapper() {
     </div>
   );
 }
+
