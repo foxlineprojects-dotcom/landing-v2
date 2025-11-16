@@ -1,57 +1,56 @@
-import React, { useState } from "react";
-import DarkModeToggle from "./DarkModeToggle";
+import React from "react";
 import Navbar from "./Navbar";
 
 const Hero = () => {
   return (
     <div>
       {/* Header */}
-
       <Navbar />
+      
       {/* Hero Section */}
-      <div className="max-w-4xl py-20 mx-auto text-center mb-12">
-        <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
-          Tired of feeling{" "}
-          <span style={{ color: "#2c5f5f" }}>intimidated and confused</span>{" "}
-          when shopping for a car?
-        </h1>
-        <p className="text-xl md:text-2xl text-slate-600 mb-4">
-          Know what you can save and what's fair—before you sign anything.
-        </p>
-        <p className="text-lg text-slate-500">
-          Upload your car contract or estimate. Get a plain-English breakdown in
-          24 hours.{" "}
-          <span className="font-semibold">
-            No pressure. No upsells. Just clarity.
-          </span>
-        </p>
-      </div>
-      {/* <section className="max-w-6xl mx-auto px-4 py-12 md:py-20">
-        <div className="max-w-4xl mx-auto text-center mb-12 transition-colors">
-          <h1 className="text-4xl md:text-6xl font-bold text-slate-900 :text-white mb-6 leading-tight">
-            Tired of the maze of{" "}
-            <span className="text-blue-600 :text-blue-400">
-              hidden fees
-            </span>{" "}
-            and{" "}
-            <span className="text-blue-600 :text-blue-400">
-              fine print?
-            </span>
+      <div className="relative overflow-hidden min-h-[600px] flex items-center">
+        {/* Background Image - 20% Opacity (Subtle) */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center opacity-20"
+          style={{ 
+            backgroundImage: "url('https://images.pexels.com/photos/6110062/pexels-photo-6110062.jpeg')"
+          }}
+        ></div>
+        
+        {/* Solid Overlay */}
+        <div 
+          className="absolute inset-0"
+          style={{ background: "linear-gradient(135deg, #2c5f5f 0%, #1a4040 100%)" }}
+        ></div>
+
+        {/* Hero Content */}
+        <div className="relative max-w-5xl mx-auto px-4 py-20 text-center">
+          
+          {/* Headline */}
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            Stop Getting Taken Advantage Of at the Dealership
           </h1>
 
-          <p className="text-xl md:text-2xl text-slate-600 :text-slate-300 mb-4">
-            Get your contract analyzed—free. Know exactly what you're signing.
+          {/* Subheadline */}
+          <p className="text-2xl md:text-3xl text-white/90 mb-12 max-w-4xl mx-auto">
+            Upload your contract. We'll show you every hidden fee and exactly how to negotiate back.
           </p>
 
-          <p className="text-lg text-slate-500 :text-slate-400">
-            Upload your estimate or contract. Get a plain-English breakdown in
-            24 hours.{" "}
-            <span className="font-semibold :text-white">
-              No pressure. No upsells. Just clarity.
-            </span>
-          </p>
+          {/* CTA Button */}
+          <button
+            onClick={() => {
+              window.scrollTo({ top: 800, behavior: 'smooth' });
+            }}
+            className="inline-flex items-center gap-3 font-semibold py-5 px-12 rounded-lg transition-all text-xl shadow-2xl hover:shadow-xl transform hover:scale-105"
+            style={{ 
+              backgroundColor: "#f5e6d3", 
+              color: "#2c5f5f",
+            }}
+          >
+            Get Your Free Analysis →
+          </button>
         </div>
-      </section> */}
+      </div>
     </div>
   );
 };
