@@ -17,7 +17,7 @@ const Hero = () => {
             filter: 'brightness(0.35)'
           }}
         ></div>
-
+        
         {/* Elegant Gold Overlay Gradient */}
         <div 
           className="absolute inset-0 w-full h-full"
@@ -25,7 +25,7 @@ const Hero = () => {
             background: 'linear-gradient(to right, rgba(212, 175, 55, 0.15), rgba(0, 0, 0, 0.3))'
           }}
         ></div>
-
+        
         {/* Hero Content */}
         <div className="relative max-w-6xl mx-auto px-6 py-28 text-center z-10">
           
@@ -40,19 +40,18 @@ const Hero = () => {
           >
             Stop Getting Taken Advantage Of at the Dealership
           </h1>
-
+          
           {/* Subheadline - Smart & Clear */}
           <p 
             className="text-2xl md:text-3xl lg:text-4xl mb-14 max-w-5xl mx-auto font-light"
             style={{
-              color: '#F5E6D3', // Cream
+              color: '#F5E6D3',
               textShadow: '1px 2px 8px rgba(0, 0, 0, 0.9)'
             }}
           >
-           <p>
-  Upload your quote. We'll reveal every hidden fee and show you exactly how to negotiate back.
-</p>
-
+            Upload your quote. We'll reveal every hidden fee and show you exactly how to negotiate back.
+          </p>
+          
           {/* CTA Button - More Orange */}
           <button
             onClick={() => {
@@ -60,9 +59,9 @@ const Hero = () => {
             }}
             className="inline-flex items-center gap-3 font-bold py-6 px-14 rounded-lg transition-all text-xl shadow-2xl hover:shadow-xl transform hover:scale-105"
             style={{ 
-              backgroundColor: '#FF6B35', // Bright Orange
-              color: '#000000', // Black text
-              border: '2px solid #D4AF37' // Gold border
+              backgroundColor: '#FF6B35',
+              color: '#000000',
+              border: '2px solid #D4AF37'
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.backgroundColor = '#E85A28';
@@ -70,7 +69,8 @@ const Hero = () => {
             onMouseLeave={(e) => {
               e.currentTarget.style.backgroundColor = '#FF6B35';
             }}
-          Check If This Deal Is Fair →
+          >
+            Check If This Deal Is Fair →
           </button>
         </div>
       </div>
@@ -79,4 +79,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
