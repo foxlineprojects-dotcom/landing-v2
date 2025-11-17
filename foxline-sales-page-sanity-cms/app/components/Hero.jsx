@@ -49,8 +49,9 @@ const Hero = () => {
               textShadow: '1px 2px 8px rgba(0, 0, 0, 0.9)'
             }}
           >
-            Upload your contract. We'll show you every hidden fee and exactly how to negotiate back.
-          </p>
+           <p>
+  Upload your quote. We'll reveal every hidden fee and show you exactly how to negotiate back.
+</p>
 
           {/* CTA Button - More Orange */}
           <button
@@ -69,8 +70,7 @@ const Hero = () => {
             onMouseLeave={(e) => {
               e.currentTarget.style.backgroundColor = '#FF6B35';
             }}
-          >
-            Get Your Free Analysis →
+          Check If This Deal Is Fair →
           </button>
         </div>
       </div>
@@ -79,3 +79,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
