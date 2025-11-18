@@ -12,8 +12,8 @@ const Hero = () => {
         <div 
           className="absolute inset-0 w-full h-full bg-cover bg-center"
           style={{ 
-            backgroundImage: "url('/assets/hero-woman-car-contract.jpg')",
-            filter: 'brightness(0.5)'
+            backgroundImage: "url('/assets/iStock-114854747.jpg')",
+            filter: 'brightness(0.75)'
           }}
         ></div>
         
@@ -32,8 +32,8 @@ const Hero = () => {
           <h1 
             className="text-6xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight"
             style={{
-              color: '#F5E6D3', // Cream
-              textShadow: '2px 4px 12px rgba(0, 0, 0, 0.8)',
+              color: '#1F2937', // Dark charcoal
+              textShadow: '2px 4px 12px rgba(255, 255, 255, 0.8)',
               letterSpacing: '-0.02em'
             }}
           >
@@ -44,8 +44,8 @@ const Hero = () => {
           <p 
             className="text-2xl md:text-3xl lg:text-4xl mb-14 max-w-5xl mx-auto font-light"
             style={{
-              color: '#F5E6D3',
-              textShadow: '1px 2px 8px rgba(0, 0, 0, 0.9)'
+              color: '#374151',
+              textShadow: '1px 2px 8px rgba(255, 255, 255, 0.9)'
             }}
           >
             Upload your quote or contract. We'll show you every hidden fee, markup, and negotiation opportunity before you sign.
@@ -73,7 +73,7 @@ const Hero = () => {
           </button>
           
           {/* Trust Signals - Added below button */}
-          <div className="mt-6 flex items-center justify-center gap-6 flex-wrap text-lg" style={{ color: '#F5E6D3' }}>
+          <div className="mt-6 flex items-center justify-center gap-6 flex-wrap text-lg" style={{ color: '#374151' }}>
             <span className="flex items-center gap-2">
               🔒 Free
             </span>
