@@ -9,7 +9,7 @@ export default function FreeAnalysisForm() {
     email: "",
     file: null,
   });
-  const [submitted, setSubmitted] = useState(false);
+  const [submitted, setSubmitted] = useState(false); 
   const [fileName, setFileName] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -90,7 +90,7 @@ export default function FreeAnalysisForm() {
       <div className="min-h-[300px] flex flex-col gap-4 items-center justify-center">
         <CheckCircle className="w-12 h-12 text-emerald-600" />
         <p className="text-lg font-semibold text-slate-900 :text-white">
-          Thanks! We’ll reach out soon.
+          Thanks! We'll reach out soon.
         </p>
       </div>
     );
@@ -204,7 +204,7 @@ export default function FreeAnalysisForm() {
 
         <div>
           <label className="block text-sm font-medium text-slate-700 mb-2">
-            Upload Your Car Contract or Estimate
+            Upload Your Quote or Contract
           </label>
           <div className="relative">
             <input
@@ -257,7 +257,7 @@ export default function FreeAnalysisForm() {
             (e.currentTarget.style.backgroundColor = "#e08e79")
           }
         >
-          Analyze My Car Contract Free
+          Analyze My Quote Free
         </button>
 
         <p className="text-center text-xs text-slate-500">
