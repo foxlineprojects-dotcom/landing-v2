@@ -12,7 +12,7 @@ const Hero = () => {
         <div 
           className="absolute inset-0 w-full h-full bg-cover bg-center"
           style={{ 
-            backgroundImage: "url('/iStock-114854747.jpg')",
+           backgroundImage: "url('https://raw.githubusercontent.com/foxlineprojects-dotcom/landing-v2/main/foxline-sales-page-sanity-cms/public/iStock-114854747.jpg')",
             filter: 'brightness(0.75)'
           }}
         ></div>
@@ -90,4 +90,5 @@ const Hero = () => {
   );
 };
 export default Hero;
+
 
