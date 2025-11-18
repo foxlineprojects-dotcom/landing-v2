@@ -12,7 +12,7 @@ const Hero = () => {
         <div 
           className="absolute inset-0 w-full h-full bg-cover bg-center"
           style={{ 
-            backgroundImage: "url('https://images.pexels.com/photos/6110062/pexels-photo-6110062.jpeg')",
+            backgroundImage: "url('/images/hero-woman-car-contract.jpg')",
             filter: 'brightness(0.5)'
           }}
         ></div>
