@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "./Navbar";
-
 const Hero = () => {
   return (
     <div>
@@ -38,7 +37,7 @@ const Hero = () => {
               letterSpacing: '-0.02em'
             }}
           >
-            Stop Getting Taken Advantage Of at the Dealership
+            Dealership Contract Seem Too Good to Be True?
           </h1>
           
           {/* Subheadline - Smart & Clear */}
@@ -49,7 +48,7 @@ const Hero = () => {
               textShadow: '1px 2px 8px rgba(0, 0, 0, 0.9)'
             }}
           >
-            Upload your quote. We'll reveal every hidden fee and show you exactly how to negotiate back.
+            Upload your quote or contract. We'll show you every hidden fee, markup, and negotiation opportunity before you sign.
           </p>
           
           {/* CTA Button - More Orange */}
@@ -70,12 +69,24 @@ const Hero = () => {
               e.currentTarget.style.backgroundColor = '#FF6B35';
             }}
           >
-            Check If This Deal Is Fair →
+            Analyze My Quote Free →
           </button>
+          
+          {/* Trust Signals - Added below button */}
+          <div className="mt-6 flex items-center justify-center gap-6 flex-wrap text-lg" style={{ color: '#F5E6D3' }}>
+            <span className="flex items-center gap-2">
+              🔒 Free
+            </span>
+            <span className="flex items-center gap-2">
+              • Secure upload
+            </span>
+            <span className="flex items-center gap-2">
+              • Results in 24 hours
+            </span>
+          </div>
         </div>
       </div>
     </div>
   );
 };
-
 export default Hero;
