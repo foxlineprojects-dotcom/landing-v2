@@ -12,8 +12,7 @@ const Hero = () => {
         <div 
           className="absolute inset-0 w-full h-full bg-cover bg-center"
           style={{ 
-            backgroundImage: "url('https://i.imgur.com/0kY9nZI.jpg')",
-            filter: 'brightness(0.75)'
+            backgroundImage: "url('https://i.imgur.com/i7CPxxD.jpg')"
           }}
         ></div>
         
@@ -21,7 +20,7 @@ const Hero = () => {
         <div 
           className="absolute inset-0 w-full h-full"
           style={{ 
-            background: 'linear-gradient(to right, rgba(212, 175, 55, 0.15), rgba(0, 0, 0, 0.3))'
+            background: 'linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4))'
           }}
         ></div>
         
@@ -32,9 +31,10 @@ const Hero = () => {
           <h1 
             className="text-6xl md:text-7xl lg:text-8xl font-bold mb-8 leading-tight"
             style={{
-              color: '#1F2937', // Dark charcoal
-              textShadow: '2px 4px 12px rgba(255, 255, 255, 0.8)',
-              letterSpacing: '-0.02em'
+              color: '#FFFFFF',
+              textShadow: '4px 4px 12px rgba(0, 0, 0, 1), 2px 2px 8px rgba(0, 0, 0, 0.9), 0px 0px 40px rgba(0, 0, 0, 0.5)',
+              letterSpacing: '-0.02em',
+              fontWeight: '900'
             }}
           >
             Dealership Contract Seem Too Good to Be True?
@@ -42,10 +42,11 @@ const Hero = () => {
           
           {/* Subheadline - Smart & Clear */}
           <p 
-            className="text-2xl md:text-3xl lg:text-4xl mb-14 max-w-5xl mx-auto font-light"
+            className="text-2xl md:text-3xl lg:text-4xl mb-14 max-w-5xl mx-auto font-medium"
             style={{
-              color: '#374151',
-              textShadow: '1px 2px 8px rgba(255, 255, 255, 0.9)'
+              color: '#FFFFFF',
+              textShadow: '3px 3px 10px rgba(0, 0, 0, 1), 1px 1px 6px rgba(0, 0, 0, 0.9), 0px 0px 30px rgba(0, 0, 0, 0.5)',
+              fontWeight: '600'
             }}
           >
             Upload your quote or contract. We'll show you every hidden fee, markup, and negotiation opportunity before you sign.
@@ -73,7 +74,7 @@ const Hero = () => {
           </button>
           
           {/* Trust Signals - Added below button */}
-          <div className="mt-6 flex items-center justify-center gap-6 flex-wrap text-lg" style={{ color: '#374151' }}>
+          <div className="mt-6 flex items-center justify-center gap-6 flex-wrap text-lg" style={{ color: '#FFFFFF' }}>
             <span className="flex items-center gap-2">
               🔒 Free
             </span>
@@ -90,4 +91,3 @@ const Hero = () => {
   );
 };
 export default Hero;
-
