@@ -37,7 +37,7 @@ const Hero = () => {
               fontWeight: '900'
             }}
           >
-            Is Your Gut Telling You This Deal Isn't Right?
+            Is Your Gut Telling You This Car Deal Isn't Right?
           </h1>
           
           {/* Subheadline - Smart & Clear */}
@@ -91,3 +91,4 @@ const Hero = () => {
   );
 };
 export default Hero;
+
