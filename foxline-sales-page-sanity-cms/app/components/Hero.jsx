@@ -37,7 +37,7 @@ const Hero = () => {
               fontWeight: '900'
             }}
           >
-            Dealership Contract Seem Too Good to Be True?
+            Is Your Gut Telling You This Deal Isn't Right?
           </h1>
           
           {/* Subheadline - Smart & Clear */}
