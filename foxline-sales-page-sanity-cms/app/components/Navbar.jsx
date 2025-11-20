@@ -58,25 +58,31 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-x-5">
-            <a
+            
               href="/#about"
               className="text-slate-600 :text-slate-300 hover:text-slate-900 :hover:text-white font-medium transition-colors"
             >
               About
             </a>
-            <a
+            
               href="/#testimonial"
               className="text-slate-600 :text-slate-300 hover:text-slate-900 :hover:text-white font-medium transition-colors"
             >
               Testimonials
             </a>
-            <a
+            
+              href="/blog"
+              className="text-slate-600 :text-slate-300 hover:text-slate-900 :hover:text-white font-medium transition-colors"
+            >
+              Blog
+            </a>
+            
               href="/#faq"
               className="text-slate-600 :text-slate-300 hover:text-slate-900 :hover:text-white font-medium transition-colors"
             >
               Faq
             </a>
-            <a
+            
               href="/#analysis"
               className="text-slate-600 :text-slate-300 hover:text-slate-900 :hover:text-white font-medium transition-colors"
             >
@@ -101,11 +107,14 @@ const Navbar = () => {
               <a href="/#about" className="font-medium hover:text-blue-500">
                 About
               </a>
-              <a
+              
                 href="/#testimonial"
                 className="font-medium hover:text-blue-500"
               >
                 Testimonials
+              </a>
+              <a href="/blog" className="font-medium hover:text-blue-500">
+                Blog
               </a>
               <a href="/#faq" className="font-medium hover:text-blue-500">
                 Faq
